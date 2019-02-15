@@ -1,7 +1,7 @@
 # Description
 TableIt: MySQL | Express | React | Node.js
 
-TableIt is a full-stack application that I built with three other engineers. Our goal was to replicate OpenTable's product page, matching its front-end look and functionality as closely as possible. We each tackled different sections of the page, employing a microservice architecture so that we could each develop independently in vertical slices. My role in particular was to recreate the restaurant reviews sections, which included the reviews summary and reviews list components. Once our respective components were complete, we each deployed our own microservice and a reverse-proxy server integrating our components onto one page.
+TableIt is a full-stack application that I built with three other engineers. Our goal was to replicate OpenTable's product page, matching its front-end look and functionality as closely as possible. We each tackled different sections of the page, employing a microservice architecture in order to develop independently in vertical slices. My role in particular was to recreate the restaurant reviews sections, which included the reviews summary and reviews list components. Once our respective components were complete, we each deployed our own microservice and a reverse-proxy server integrating our components onto one page.
 
 
 # Demos
