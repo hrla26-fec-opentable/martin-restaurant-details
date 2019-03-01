@@ -1,7 +1,7 @@
 const path = require('path');
 
-module.exports = {
-  mode: 'development',
+module.exports = env => ({
+  mode: env.NODE_ENV,
   entry: './client/src/index.js',
   output: {
     filename: 'bundle.js',
@@ -36,4 +36,4 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.css'],
   },
-};
+});
