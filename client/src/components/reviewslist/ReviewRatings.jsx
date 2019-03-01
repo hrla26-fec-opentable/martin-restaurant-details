@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import DateFns from 'date-fns';
 import styles from '../../styles/reviewslist/ReviewRatings.css';
 
@@ -31,5 +32,9 @@ const ReviewRatings = (props) => (
     </div>
   </div>
 );
+
+ReviewRatings.propTypes = {
+  review: PropTypes.objectOf(PropTypes.any).isRequired,
+};
 
 export default ReviewRatings;

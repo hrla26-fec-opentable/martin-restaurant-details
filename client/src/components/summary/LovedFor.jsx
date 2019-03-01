@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import LovedForItem from './LovedForItem.jsx';
-import helpers from '../../lib/helpers.js';
-import styles from '../../styles/summary/LovedFor.css';
+import LovedForItem from './LovedForItem';
+import helpers from '../../lib/helpers';
+import styles from '../../styles/summary/LovedFor';
 
 class LovedFor extends Component {
   constructor(props) {
@@ -20,7 +20,11 @@ class LovedFor extends Component {
       </div>
       <div className={styles.lovedforitemslist}>
         {this.state.lovedForItems.map((a, i) => (
-          <LovedForItem item={a.item} city={a.city} key={i} />
+          <LovedForItem
+            item={a.item}
+            city={a.city}
+            key={i}
+          />
         ))}
       </div>
       <div className={styles.bestrestaurantscontainer + ' ' + styles.reviewssummarytextitem}>

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from '../../styles/toolbar/SortBySelect.css';
 
 const SortBySelect = (props) => (
@@ -9,5 +10,11 @@ const SortBySelect = (props) => (
     : <img className={styles.sortbyarrow} src="https://s3-us-west-1.amazonaws.com/gitbuckets/hrla26-fec-tableit/tableit_reviews_select_arrow_up.png"></img>}
   </div>
 );
+
+SortBySelect.propTypes = {
+  selectedSortBy: PropTypes.string.isRequired,
+  sortDropdownOpen: PropTypes.bool.isRequired,
+  toggleSortDropdown: PropTypes.func.isRequired,
+};
 
 export default SortBySelect;

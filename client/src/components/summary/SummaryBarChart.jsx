@@ -1,6 +1,7 @@
 import React from 'react';
-import SummaryBarChartRow from './SummaryBarChartRow.jsx';
-import styles from '../../styles/summary/SummaryBarChart.css';
+import PropTypes from 'prop-types';
+import SummaryBarChartRow from './SummaryBarChartRow';
+import styles from '../../styles/summary/SummaryBarChart';
 
 const SummaryBarChart = (props) => (
   <div className={styles.summarybarchart}>
@@ -17,5 +18,13 @@ const SummaryBarChart = (props) => (
     ))}
   </div>
 );
+
+SummaryBarChart.propTypes = {
+  reviews: PropTypes.arrayOf(PropTypes.object).isRequired,
+  reviewsSummary: PropTypes.objectOf(PropTypes.any).isRequired,
+  selectedFilters: PropTypes.arrayOf(PropTypes.string).isRequired,
+  addOverallScoreFilter: PropTypes.func.isRequired,
+  toggleFilter: PropTypes.func.isRequired,
+};
 
 export default SummaryBarChart;

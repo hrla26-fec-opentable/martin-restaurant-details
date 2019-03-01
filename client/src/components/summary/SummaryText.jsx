@@ -1,8 +1,9 @@
 import React from 'react';
-import SummaryScoreAvg from './SummaryScoreAvg.jsx';
-import styles from '../../styles/summary/SummaryText.css';
+import PropTypes from 'prop-types';
+import SummaryScoreAvg from './SummaryScoreAvg';
+import styles from '../../styles/summary/SummaryText';
 
-const SummaryText = (props) => {
+const SummaryText = props => {
   let overallScore = props.reviewsSummary.avg_overall, overallScoreStars = [];
 
   for (let i = 0; i < 5; i += 1) {
@@ -43,6 +44,10 @@ const SummaryText = (props) => {
       </div>
     </div>
   );
+};
+
+SummaryText.propTypes = {
+  reviewsSummary: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 
 export default SummaryText;

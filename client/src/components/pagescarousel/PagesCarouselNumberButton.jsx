@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from '../../styles/pagescarousel/PagesCarouselNumberButton.css';
 
 const ReviewsPagesCarouselNumberButton = (props) => (
@@ -11,5 +12,12 @@ const ReviewsPagesCarouselNumberButton = (props) => (
     </div>
   </div>
 );
+
+ReviewsPagesCarouselNumberButton.propTypes = {
+  pageNumber: PropTypes.number.isRequired,
+  updateReviewsPage: PropTypes.func.isRequired,
+  currentReviewsPage: PropTypes.number.isRequired,
+  key: PropTypes.number.isRequired,
+};
 
 export default ReviewsPagesCarouselNumberButton;

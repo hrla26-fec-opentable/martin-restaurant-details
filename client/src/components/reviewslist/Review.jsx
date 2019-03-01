@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import ReviewUser from './ReviewUser.jsx';
-import ReviewBody from './ReviewBody.jsx';
-import styles from '../../styles/reviewslist/Review.css';
-
+import PropTypes from 'prop-types';
+import ReviewUser from './ReviewUser';
+import ReviewBody from './ReviewBody';
+import styles from '../../styles/reviewslist/Review';
 
 class Review extends Component {
   constructor(props) {
@@ -55,5 +55,11 @@ class Review extends Component {
     </div>
   );
 }
+
+Review.propTypes = {
+  review: PropTypes.objectOf(PropTypes.any).isRequired,
+  index: PropTypes.number.isRequired,
+  key: PropTypes.number.isRequired,
+};
 
 export default Review;

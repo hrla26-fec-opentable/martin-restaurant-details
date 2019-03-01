@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from '../../styles/pagescarousel/PagesCarouselDirectionButton.css';
 
 const PagesCarouselDirectionButton = (props) => (
@@ -14,5 +15,11 @@ const PagesCarouselDirectionButton = (props) => (
     </div>
   </div>
 );
+
+PagesCarouselDirectionButton.propTypes = {
+  direction: PropTypes.string.isRequired,
+  updateReviewsPage: PropTypes.func.isRequired,
+  currentReviewsPage: PropTypes.number.isRequired,
+};
 
 export default PagesCarouselDirectionButton;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import styles from '../../styles/reviewslist/ReviewFooter.css';
+import PropTypes from 'prop-types';
+import styles from '../../styles/reviewslist/ReviewFooter';
 
 class ReviewFooter extends Component {
   constructor(props) {
@@ -34,5 +35,11 @@ class ReviewFooter extends Component {
     </div>
   );
 }
+
+ReviewFooter.propTypes = {
+  toggleExpanded: PropTypes.func.isRequired,
+  overflow: PropTypes.bool.isRequired,
+  expanded: PropTypes.bool.isRequired,
+};
 
 export default ReviewFooter;

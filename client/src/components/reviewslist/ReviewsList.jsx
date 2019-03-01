@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import Review from './Review.jsx';
-import styles from '../../styles/reviewslist/ReviewsList.css';
+import React from 'react';
+import PropTypes from 'prop-types';
+import Review from './Review';
+import styles from '../../styles/reviewslist/ReviewsList';
 
-const ReviewsList = (props) => (
+const ReviewsList = props => (
   <div className={styles.reviewslist}>
     {props.selectedReviews()
       .filter((review, i) => {
@@ -20,5 +21,11 @@ const ReviewsList = (props) => (
     )}
   </div>
 );
+
+ReviewsList.propTypes = {
+  selectedReviews: PropTypes.arrayOf(PropTypes.object).isRequired,
+  reviewsPerPage: PropTypes.number.isRequired,
+  currentReviewsPage: PropTypes.number.isRequired,
+};
 
 export default ReviewsList;

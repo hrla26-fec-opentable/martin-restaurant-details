@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Filter from './Filter.jsx';
 import styles from '../../styles/toolbar/Filters.css';
 
@@ -19,5 +20,12 @@ const Filters = (props) => (
     </div>
   </div>
 );
+
+Filters.propTypes = {
+  reviews: PropTypes.arrayOf(PropTypes.object).isRequired,
+  reviewsFilters: PropTypes.arrayOf(PropTypes.string).isRequired,
+  toggleFilter: PropTypes.func.isRequired,
+  selectedFilters: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default Filters;

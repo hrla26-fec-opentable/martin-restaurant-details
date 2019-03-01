@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from '../../styles/summary/LovedForItem.css';
+import PropTypes from 'prop-types';
+import styles from '../../styles/summary/LovedForItem';
 
 const LovedForItem = (props) => (
   <div className={styles.lovedforitem}>
@@ -16,5 +17,11 @@ const LovedForItem = (props) => (
     </div>
   </div>
 );
+
+LovedForItem.propTypes = {
+  item: PropTypes.string.isRequired,
+  city: PropTypes.string.isRequired,
+  key: PropTypes.number.isRequired,
+};
 
 export default LovedForItem;

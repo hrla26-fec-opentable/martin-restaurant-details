@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from '../../styles/reviewslist/ReviewUser.css';
 
 const ReviewUser = (props) => {
@@ -22,6 +23,13 @@ const ReviewUser = (props) => {
       </div>
     </div>
   );
+};
+
+ReviewUser.propTypes ={
+  username: PropTypes.string.isRequired,
+  userInitials: PropTypes.string.isRequired,
+  userCity: PropTypes.string.isRequired,
+  reviewCount: PropTypes.number.isRequired,
 };
 
 export default ReviewUser;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import _ from 'underscore';
 import PagesCarouselNumberButton from './PagesCarouselNumberButton.jsx';
 import PagesCarouselDirectionButton from './PagesCarouselDirectionButton.jsx';
@@ -55,6 +56,13 @@ const PagesCarousel = (props) => {
   } else {
     return null;
   }
+};
+
+PagesCarousel.propTypes = {
+  selectedReviews: PropTypes.func.isRequired,
+  currentReviewsPage: PropTypes.number.isRequired,
+  reviewsPerPage: PropTypes.number.isRequired,
+  updateReviewsPage: PropTypes.func.isRequired,
 };
 
 export default PagesCarousel;

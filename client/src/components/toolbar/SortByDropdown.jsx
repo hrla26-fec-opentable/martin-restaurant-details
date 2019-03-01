@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from '../../styles/toolbar/SortByDropdown.css';
 
 const SortByDropdown = (props) => (
@@ -17,5 +18,10 @@ const SortByDropdown = (props) => (
     </div>
   </div>
 );
+
+SortByDropdown.propTypes = {
+  selectedSortBy: PropTypes.string.isRequired,
+  updateSelectedSortBy: PropTypes.func.isRequired,
+};
 
 export default SortByDropdown;

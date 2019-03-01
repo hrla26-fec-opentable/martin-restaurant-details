@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from '../../styles/toolbar/Filter.css';
 
 const Filter = (props) => {
@@ -15,6 +16,15 @@ const Filter = (props) => {
       <span>{`${props.filter} ${props.filter.slice(1, 6) === ' Star' ? '' : `(${reviewCount})`}`}</span>
     </div>
   );
+};
+
+Filter.propTypes = {
+  reviews: PropTypes.arrayOf(PropTypes.object).isRequired,
+  filter: PropTypes.string.isRequired,
+  key: PropTypes.number.isRequired,
+  index: PropTypes.number.isRequired,
+  clicked: PropTypes.bool.isRequired,
+  toggleFilter: PropTypes.func.isRequired,
 };
 
 export default Filter;

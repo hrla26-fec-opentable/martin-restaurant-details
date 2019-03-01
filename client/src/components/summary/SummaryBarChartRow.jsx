@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from '../../styles/summary/SummaryBarChartRow.css';
+import PropTypes from 'prop-types';
+import styles from '../../styles/summary/SummaryBarChartRow';
 
 const SummaryBarChartRow = (props) => {
   const totalReviewsCount = props.reviews.length;
@@ -19,6 +20,15 @@ const SummaryBarChartRow = (props) => {
       </div>
     </div>
   );
+};
+
+SummaryBarChartRow.propTypes = {
+  score: PropTypes.number.isRequired,
+  key: PropTypes.number.isRequired,
+  reviews: PropTypes.arrayOf(PropTypes.object).isRequired,
+  selectedFilters: PropTypes.arrayOf(PropTypes.string).isRequired,
+  addOverallScoreFilter: PropTypes.func.isRequired,
+  toggleFilter: PropTypes.func.isRequired,
 };
 
 export default SummaryBarChartRow;
