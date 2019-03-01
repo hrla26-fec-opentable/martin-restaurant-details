@@ -60,5 +60,8 @@ typings/
 # next.js build output
 .next
 
+# webpack bundle
+bundle.js
+
 # db config
 # db/config.js

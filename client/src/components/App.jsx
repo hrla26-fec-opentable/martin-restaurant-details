@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
-import Summary from './summary/Summary.jsx';
-import Toolbar from './toolbar/Toolbar.jsx';
-import ReviewsList from './reviewslist/ReviewsList.jsx';
-import PagesCarousel from './pagescarousel/PagesCarousel.jsx';
-import styles from '../styles/App.css';
+import Summary from './summary/Summary';
+import Toolbar from './toolbar/Toolbar';
+import ReviewsList from './reviewslist/ReviewsList';
+import PagesCarousel from './pagescarousel/PagesCarousel';
+import styles from '../styles/App';
 
 class App extends Component {
   constructor(props) {

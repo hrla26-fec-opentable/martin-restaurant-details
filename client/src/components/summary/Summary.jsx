@@ -1,8 +1,8 @@
 import React from 'react';
-import SummaryText from './SummaryText.jsx';
-import SummaryBarChart from './SummaryBarChart.jsx';
-import LovedFor from './LovedFor.jsx';
-import styles from '../../styles/summary/Summary.css';
+import SummaryText from './SummaryText';
+import SummaryBarChart from './SummaryBarChart';
+import LovedFor from './LovedFor';
+import styles from '../../styles/summary/Summary';
 
 const Summary = (props) => (
   <div className={styles.summary}>
