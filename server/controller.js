@@ -1,4 +1,4 @@
-const dbHelpers = require('../db/dbHelpers.js');
+const dbHelpers = require('../db/db.helpers');
 
 module.exports = {
   all: {
