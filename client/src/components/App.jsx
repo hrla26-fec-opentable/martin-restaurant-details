@@ -31,13 +31,13 @@ class App extends Component {
   };
 
   getAllReviews = () => {
-    return Axios.get(`http://localhost:9000/api/reviews/all/${this.state.restaurantId}`)
+    return Axios.get(`http://100.24.12.73:9000/api/reviews/all/${this.state.restaurantId}`)
       .then(({data}) => { this.setState({ reviews: data }); })
       .catch((err) => { console.error(err); });
   };
 
   getReviewsSummary = () => {
-    return Axios.get(`http://localhost:9000/api/reviews/summary/${this.state.restaurantId}`)
+    return Axios.get(`http://100.24.12.73:9000/api/reviews/summary/${this.state.restaurantId}`)
       .then(({data}) => { this.setState({ reviewsSummary: data }); })
       .catch((err) => { console.error(err); });
   };
