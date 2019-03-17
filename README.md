@@ -11,9 +11,8 @@ Notes:
 
 # Demos
 I've listed a few links below showing both our overall end product and some features I built for my specific microservice.
-- OpenTable's actual product page: https://www.opentable.com/r/bestia-los-angeles?corrid=e68e1483-ea9a-491c-a444-44b1012873fd
-- Overview of our final product: https://s3-us-west-1.amazonaws.com/gitbuckets/hrla26-fec-tableit/gifs/tableit_overview.gif
-- Sort reviews from dropdown: https://s3-us-west-1.amazonaws.com/gitbuckets/hrla26-fec-tableit/gifs/tableit_reviews_sort.gif
-- Filter reviews by clicking on bar graph: https://s3-us-west-1.amazonaws.com/gitbuckets/hrla26-fec-tableit/gifs/tableit_reviews_graph_filters.gif
-- Filter reviews by keyword: https://s3-us-west-1.amazonaws.com/gitbuckets/hrla26-fec-tableit/gifs/tableit_reviews_filters.gif
-- Reviews pagination: https://s3-us-west-1.amazonaws.com/gitbuckets/hrla26-fec-tableit/gifs/tableit_reviews_pagination.gif
+- <a href="https://s3-us-west-1.amazonaws.com/gitbuckets/hrla26-fec-tableit/gifs/tableit_overview.gif">Overview of our final product</a>
+- <a href="https://s3-us-west-1.amazonaws.com/gitbuckets/hrla26-fec-tableit/gifs/tableit_reviews_sort.gif">Sort reviews from dropdown</a>
+- <a href="https://s3-us-west-1.amazonaws.com/gitbuckets/hrla26-fec-tableit/gifs/tableit_reviews_graph_filters.gif">Filter reviews by clicking on bar graph</a>
+- <a href="https://s3-us-west-1.amazonaws.com/gitbuckets/hrla26-fec-tableit/gifs/tableit_reviews_filters.gif">Filter reviews by keyword</a>
+- <a href="https://s3-us-west-1.amazonaws.com/gitbuckets/hrla26-fec-tableit/gifs/tableit_reviews_pagination.gif">Reviews pagination</a>
